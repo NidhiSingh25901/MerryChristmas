@@ -1,0 +1,158 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden; /* Hide overflow to prevent horizontal scrollbar */
+    font-family: 'Arial', sans-serif;
+    position: relative; 
+    background-color: black;
+    overflow: hidden;
+    background-color: #000000;
+}
+
+.snowflakes {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+}
+
+.snowflake {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: #fff;
+    border-radius: 50%;
+    opacity: 0.8;
+    box-shadow: 0 0 10px 0px #fff;
+    animation: snowfall 10s linear infinite;
+}
+
+.snowflake.side-fall {
+    animation-name: sideFall, snowfall;
+}
+
+.santa-bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('santa-bg.jpg') center/cover no-repeat; /* Replace 'santa-bg.jpg' with your image */
+    z-index: -1; 
+    opacity: 0.4;
+}
+
+.quote-container {
+    text-align: center;
+    z-index: 1;
+    color: #fff;
+    padding: 1%;
+    margin: 1%; 
+}
+
+#quote-text {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    font-family: monospace;
+}
+
+button {
+    padding: 10px;
+    font-size: 1rem;
+    cursor: pointer;
+    background-color: red;
+    color: #fff;
+    border: none;
+    border-radius: 5px; 
+    font-weight: bold;
+    font-family: monospace;
+}
+
+@keyframes snowfall {
+    to {
+        transform: translateY(100%);
+    }
+}
+
+@keyframes sideFall {
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+/* ... (previous styles) */
+
+@keyframes snowfall {
+    to {
+        transform: translateY(100%);
+    }
+}
+
+/* ... (previous styles) */
+
+.snowflakes {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    animation: snowfall 5s linear infinite;
+}
+
+.snowflake {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: #fff;
+    border-radius: 50%;
+    opacity: 0.8;
+    box-shadow: 0 0 10px 0px #fff;
+}
+
+@keyframes snowfall {
+    0% {
+        transform: translateY(-10%);
+    }
+    100% {
+        transform: translateY(110%);
+    }
+}
+
+/* ... (previous styles) */
+
+.snowflakes {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    overflow: hidden;
+}
+
+.snowflake {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: #fff;
+    border-radius: 50%;
+    opacity: 0.8;
+    box-shadow: 0 0 10px 0px #fff;
+    animation: snowfall 5s linear infinite;
+}
+
+@keyframes snowfall {
+    0% {
+        transform: translateY(-10%);
+    }
+    100% {
+        transform: translateY(110%);
+    }
+}
+

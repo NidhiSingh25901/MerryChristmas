@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Random Christmas Quotes</title>
+</head>
+<body>
+    <div class="snowflakes" aria-hidden="true">
+        <div class="snowflake"></div>
+        <div class="snowflake"></div>
+        <div class="snowflake"></div>
+        <!-- Add more snowflakes as needed -->
+    </div>
+    <div class="santa-bg"></div> 
+
+    <audio id="music" autoplay loop>
+        <source src="music.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+
+    <div class="quote-container" id="quote-container">
+        <p id="quote-text"></p>
+        <button onclick="combinedFunction()">Merry Christmas</button>
+    </div>
+
+    
+    <script src="script.js"></script>
+</body>
+</html>
